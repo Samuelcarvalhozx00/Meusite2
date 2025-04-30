@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VELIT - Soluções em Gestão Empresarial</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <style>
+    /* Cores principais */
+    :root {
+      --cor-primaria: #0a1a2b;
+      --cor-secundaria: #02c4db;
+      --branco: #ffffff;
+      --cinza-claro: #f1f1f1;
+      --cinza-escuro: #333333;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--cor-primaria);
+      color: var(--cinza-claro);
+      line-height: 1.6;
+    }
+
+    header {
+      background: url('https://www.transparenttextures.com/patterns/black-linen.png'), var(--cor-primaria);
+      background-size: cover;
+      padding: 60px 30px;
+      text-align: center;
+      color: var(--branco);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    header h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 3.5rem;
+      text-transform: uppercase;
+      color: var(--cor-secundaria);
+      letter-spacing: 5px;
+      animation: fadeIn 1s ease-out;
+    }
+
+    nav {
+      margin-top: 30px;
+    }
+
+    nav a {
+      font-size: 1.2rem;
+      text-decoration: none;
+      margin: 0 20px;
+      color: var(--cinza-claro);
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--cor-secundaria);
+    }
+
+    /* Botões com animação */
+    .cta-btn {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--branco);
+      background-color: var(--cor-secundaria);
+      border: none;
+      border-radius: 50px;
+      margin-top: 20px;
+      text-align: center;
+      text-decoration: none;
+      transition: transform 0.3s, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(2, 196, 219, 0.3);
+    }
+
+    .cta-btn:active {
+      transform: translateY(0);
+    }
+
+    /* Seções */
+    main {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    section {
+      margin-bottom: 80px;
+    }
+
+    section h2 {
+      font-size: 2.8rem;
+      font-family: 'Poppins', sans-serif;
+      color: var(--cor-secundaria);
+      margin-bottom: 20px;
+    }
+
+    section p {
+      font-size: 1.1rem;
+      color: var(--cinza-claro);
+      line-height: 1.8;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: var(--cor-primaria);
+      padding: 30px;
+      text-align: center;
+      font-size: 1.1rem;
+      color: var(--branco);
+      letter-spacing: 1px;
+    }
+
+    /* Animação para os textos */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.8rem;
+      }
+
+      nav {
+        margin-top: 20px;
+      }
+
+      nav a {
+        display: block;
+        margin: 10px 0;
+        font-size: 1rem;
+      }
+
+      .cta-btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>VELIT</h1>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#solucoes">Soluções</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre">
+      <h2>Quem Somos</h2>
+      <p>A VELIT é uma empresa especializada em soluções inovadoras para gestão empresarial. Nosso compromisso é transformar o seu negócio, aplicando inteligência de mercado e ferramentas digitais de ponta.</p>
+    </section>
+
+    <section id="servicos">
+      <h2>Serviços</h2>
+      <p>Oferecemos consultoria personalizada, treinamento em tecnologias emergentes e soluções de gestão que otimizam processos, melhoram a tomada de decisões e aumentam a competitividade no mercado.</p>
+    </section>
+
+    <section id="solucoes">
+      <h2>Soluções Tecnológicas</h2>
+      <p>Utilizamos inteligência artificial, análise de dados e sistemas integrados para proporcionar às empresas ferramentas que aumentam a produtividade e reduzem custos operacionais.</p>
+      <a href="#contato" class="cta-btn">Solicite uma Demonstração</a>
+    </section>
+
+    <section id="contato">
+      <h2>Entre em Contato</h2>
+      <p>Estamos prontos para ajudar a sua empresa a crescer. Entre em contato com nossa equipe e descubra como podemos agregar valor ao seu negócio.</p>
+      <a href="mailto:contato@velit.com" class="cta-btn">Fale Conosco</a>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 VELIT - Todos os direitos reservados
+  </footer>
+
+</body>
+</html>
